@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen Lokku - Portfolio</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>PRAVEEN</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#accomplishments">Accomplishments</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Praveen <span>Lokku</span></h1>
+                <h2>Computer Science Student & Developer</h2>
+                <p>Passionate about creating innovative solutions with AI and Machine Learning</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shape"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image animated fadeInLeft">
+                    <div class="image-box">
+                        <img src="image.jpg" alt="Praveen Lokku">
+                    </div>
+                </div>
+                <div class="about-text animated fadeInRight">
+                    <h3>Hello, I'm Praveen Lokku</h3>
+                    <p>I am a Computer Science student at Bennett University, passionate about developing innovative solutions using machine learning and artificial intelligence. With experience in multiple programming languages and a track record of successful
+                        projects, I aim to make a positive impact through technology.</p>
+
+                    <div class="about-info">
+                        <div class="info-item">
+                            <h4>Education</h4>
+                            <div class="info-content">
+                                <div class="info-block">
+                                    <div class="info-title">Bachelor of Science: Computer Science</div>
+                                    <p>Bennett University - Greater Noida, Uttar Pradesh, India</p>
+                                    <p>Expected: August 2027</p>
+                                </div>
+                                <div class="info-block">
+                                    <div class="info-title">Intermediate</div>
+                                    <p>Krishna Chaitanya Junior College - Nellore, Andhra Pradesh, India</p>
+                                    <p>Completed: April 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <h4>Languages</h4>
+                            <div class="info-content">
+                                <div class="info-block">
+                                    <div class="info-title">Hindi</div>
+                                    <p>Upper intermediate (B2)</p>
+                                </div>
+                                <div class="info-block">
+                                    <div class="info-title">Telugu</div>
+                                    <p>Upper intermediate (B2)</p>
+                                </div>
+                                <div class="info-block">
+                                    <div class="info-title">English</div>
+                                    <p>Advanced (C1)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-buttons">
+                        <a href="#contact" class="btn btn-primary">Contact Me</a>
+                        <a href="#" class="btn btn-secondary">Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Skills</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-aos="fade-up">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="skill-name">Python</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="--skill-level: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <i class="fab fa-cuttlefish"></i>
+                            </div>
+                            <div class="skill-name">C++</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="--skill-level: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="skill-name">React JS</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="--skill-level: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="skill-name">HTML/CSS</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="--skill-level: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="--skill-level: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="500">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-name">MySQL</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="--skill-level: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="600">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-name">PostgreSQL</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="--skill-level: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-aos="fade-up">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="skill-name">Flask</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="--skill-level: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="skill-name">Django</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="--skill-level: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="skill-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <div class="skill-name">OpenCV</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="--skill-level: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="skill-name">Scikit-learn</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="--skill-level: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="skill-name">TensorFlow</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="--skill-level: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Concepts</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="skill-name">DSA</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="--skill-level: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-aos="fade-up">
+                            <div class="skill-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="skill-name">OOP</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="--skill-level: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="skill-name">Machine Learning</div>
+                            <div class="skill-level">
+                                <div class="skill-level-fill" style="--skill-level: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="interviewer.png" alt="AI-Smart Interviewer">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://interviewer-ps61.onrender.com" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/praveenlokku/interviewer.git" class="project-github"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/posts/praveenlokku_ai-gemini-activity-7277296725801758720-sHwN?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEXL4AQB_87WG4NVjFukgjLQOlRgpw4l408" class="project-Linkedin"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI-Smart Interviewer</h3>
+                        <p>Helps users prepare for interviews. It customizes questions based on the job role they are aiming for and uses a Machine Learning model to simulate real interview scenarios. Additionally, it analyzes facial expressions to detect
+                            emotions like confidence and nervousness, providing valuable feedback after the practice sessions.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>MySQL</span>
+                            <span>OpenCV</span>
+                            <span>Keras</span>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="vidhi.png" alt="Vidhi Chatbot">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/praveenlokku/vidhi-chat-bot.git" class="project-github"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/posts/praveenlokku_very-happy-to-note-that-the-ranking-of-79th-activity-7237765856749838336-5l8q?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEXL4AQB_87WG4NVjFukgjLQOlRgpw4l408" class="project-Linkedin"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Vidhi Chatbot</h3>
+                        <p>Chatbot for the Smart India Hackathon (SIH), where our team proudly secured 79th place nationally. The chatbot was built to assist users by offering features like Fast-Track Court details, Case Status Tracking, and even live streaming
+                            of court cases. It also provided easy access to the National Judicial Data Grid (NJDC) for real-time updates on case pendency and kept users informed about judicial appointments and vacancies.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>MySQL</span>
+                            <span>OpenCV</span>
+                            <span>Flask</span>
+                            <span>Google Generative AI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="talentsphere.png" alt="TalentSphere">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/praveenlokku/TalentSphere.git" class="project-github"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/posts/praveenlokku_talentsphere-edtech-reactjs-activity-7307091623669022721-t21J?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEXL4AQB_87WG4NVjFukgjLQOlRgpw4l408" class="project-Linkedin"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>TalentSphere</h3>
+                        <p>A platform where students collaborate on real-world industry projects, build skills, and earn rewards.
+                            <br>As students, we often struggle to work on industrial projects before entering the professional world. Recognizing this challenge, our team "Sparq" has developed a website that connects industrial experts with students.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>React Js</span>
+                            <span>Postgresql</span>
+                            <span>OpenCV</span>
+                            <span>Django</span>
+                            <span>Google Generative AI</span>
+                        </div>
+                    </div>
+                </div><a href="#projects" class="btn btn-secondary"> More Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accomplishments Section -->
+    <section id="accomplishments" class="accomplishments">
+        <div class="container">
+            <div class="section-header">
+                <h2>Accomplishments</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="accomplishments-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Smart India Hackathon</h3>
+                        <span class="timeline-date">2023</span>
+                        <a href="https://github.com/praveenlokku/Certificate/blob/main/Lokku%20Praveen.pdf" class="btn btn-small" target="_blank">View Certificate</a>
+                        <br>
+                        <p>Secured the 79th position in SIH (Smart India Hackathon), showcasing innovation and technical excellence.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Working on a Startup</h3>
+                        <span class="timeline-date">2024</span>
+                        <p>Collaborated with a team to ideate and develop a service targeting college campuses, with plans for rapid deployment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+91 9063****32</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p><a href="mailto:praveenlokku@gmail.com">praveenlokku@gmail.com</a></p>
+
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://www.linkedin.com/in/praveenlokku" target="_blank">praveenlokku</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>GitHub</h3>
+                            <p><a href="https://www.github.com/praveenlokku" target="_blank">github.com/praveenlokku</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="  Your Name" required style="height: 40px; width: 100%; border-radius: 8px;">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="   Your Email" required style="height: 40px; width: 100%; border-radius: 8px;">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="    Subject" required style="height: 40px; width: 100%; border-radius: 8px;">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder=" Your Message" required style="height: 100px; width: 100%; border-radius: 8px;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <a href="#home" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
