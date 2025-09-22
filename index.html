@@ -32,6 +32,7 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#accomplishments">Accomplishments</a></li>
+                    <li><a href="#participations">Participations</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="menu-toggle">
@@ -58,6 +59,7 @@
         </div>
         <div class="hero-shape"></div>
     </section>
+    
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -69,7 +71,7 @@
             <div class="about-content">
                 <div class="about-image animated fadeInLeft">
                     <div class="image-box">
-                        <img src="image.jpg" alt="Praveen Lokku">
+                        <img src="me.jpg" alt="Praveen Lokku">
                     </div>
                 </div>
                 <div class="about-text animated fadeInRight">
@@ -98,22 +100,19 @@
                             <div class="info-content">
                                 <div class="info-block">
                                     <div class="info-title">Hindi</div>
-                                    <p>Upper intermediate (B2)</p>
                                 </div>
                                 <div class="info-block">
                                     <div class="info-title">Telugu</div>
-                                    <p>Upper intermediate (B2)</p>
                                 </div>
                                 <div class="info-block">
                                     <div class="info-title">English</div>
-                                    <p>Advanced (C1)</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="about-buttons">
                         <a href="#contact" class="btn btn-primary">Contact Me</a>
-                        <a href="#" class="btn btn-secondary">Download Resume</a>
+                        <a href="Resume.pdf" download class="btn btn-secondary">Download Resume</a>
                     </div>
                 </div>
             </div>
@@ -303,89 +302,144 @@
                 <h2>My Projects</h2>
                 <div class="section-line"></div>
             </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Projects</button>
+                <button class="filter-btn" data-filter="ai">AI Projects</button>
+            </div>
             <div class="projects-grid">
                 <!-- Project 1 -->
-                <div class="project-card">
+                <div class="project-card" data-category="web">
                     <div class="project-image">
-                        <img src="interviewer.png" alt="AI-Smart Interviewer">
+                        <img src="talentsphere.png" alt="STUJYA">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://interviewer-ps61.onrender.com" class="project-link"><i class="fas fa-link"></i></a>
-                                <a href="https://github.com/praveenlokku/interviewer.git" class="project-github"><i class="fab fa-github"></i></a>
-                                <a href="https://www.linkedin.com/posts/praveenlokku_ai-gemini-activity-7277296725801758720-sHwN?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEXL4AQB_87WG4NVjFukgjLQOlRgpw4l408" class="project-Linkedin"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://stujya.site" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/praveenlokku/TalentSphere.git" class="project-github" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                                <a href="https://lnkd.in/p/gdp73cJD" class="project-linkedin" title="LinkedIn Post"><i class="fab fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>AI-Smart Interviewer</h3>
-                        <p>Helps users prepare for interviews. It customizes questions based on the job role they are aiming for and uses a Machine Learning model to simulate real interview scenarios. Additionally, it analyzes facial expressions to detect
-                            emotions like confidence and nervousness, providing valuable feedback after the practice sessions.</p>
+                        <div class="project-header">
+                            <h3>STUJYA</h3>
+                            <span class="project-status status-in-progress">In Progress</span>
+                        </div>
+                        <p class="project-description">
+                            A collaborative platform connecting students with industry experts for real-world project experience. Students can work on industrial projects, build skills, and earn rewards while gaining practical experience before entering the professional world.
+                        </p>
                         <div class="project-tech">
-                            <span>Python</span>
-                            <span>JavaScript</span>
-                            <span>HTML/CSS</span>
-                            <span>MySQL</span>
-                            <span>OpenCV</span>
-                            <span>Keras</span>
-                            <span>Flask</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">React JS</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">OpenCV</span>
+                            <span class="tech-badge">Django</span>
+                            <span class="tech-badge">Google AI</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card">
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <img src="interviewer.png" alt="AI-Smart Interviewer">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://interviewer-ps61.onrender.com" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/praveenlokku/interviewer.git" class="project-github" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/posts/praveenlokku_ai-gemini-activity-7277296725801758720-sHwN?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEXL4AQB_87WG4NVjFukgjLQOlRgpw4l408" class="project-linkedin" title="LinkedIn Post"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>AI-Smart Interviewer</h3>
+                            <span class="project-status status-completed">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            An intelligent interview preparation platform that customizes questions based on target job roles. Features ML-powered interview simulation with real-time facial expression analysis to detect confidence and nervousness, providing comprehensive feedback.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">HTML/CSS</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">OpenCV</span>
+                            <span class="tech-badge">Keras</span>
+                            <span class="tech-badge">Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <img src="easyapply.png" alt="EasyApply">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link disabled" title="Coming Soon"><i class="fas fa-clock"></i></a>
+                                <a href="https://github.com/praveenlokku/EasyApply.git" class="project-github" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/posts/praveenlokku_very-happy-to-note-that-the-ranking-of-79th-activity-7237765856749838336-5l8q?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEXL4AQB_87WG4NVjFukgjLQOlRgpw4l408" class="project-linkedin" title="LinkedIn Post"><i class="fab fa-linkedin"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>EasyApply</h3>
+                            <span class="project-status status-completed">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            An AI-powered job application automation platform that analyzes resumes, matches them with suitable job descriptions, and automatically applies to relevant opportunities, streamlining the job search process for students and professionals.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">OpenAI</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Tailwind CSS</span>
+                            <span class="tech-badge">OpenAI API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="ai">
                     <div class="project-image">
                         <img src="vidhi.png" alt="Vidhi Chatbot">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
-                                <a href="https://github.com/praveenlokku/vidhi-chat-bot.git" class="project-github"><i class="fab fa-github"></i></a>
-                                <a href="https://www.linkedin.com/posts/praveenlokku_very-happy-to-note-that-the-ranking-of-79th-activity-7237765856749838336-5l8q?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEXL4AQB_87WG4NVjFukgjLQOlRgpw4l408" class="project-Linkedin"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/praveenlokku/vidhi-chat-bot.git" class="project-github" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/posts/praveenlokku_very-happy-to-note-that-the-ranking-of-79th-activity-7237765856749838336-5l8q?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEXL4AQB_87WG4NVjFukgjLQOlRgpw4l408" class="project-linkedin" title="LinkedIn Post"><i class="fab fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Vidhi Chatbot</h3>
-                        <p>Chatbot for the Smart India Hackathon (SIH), where our team proudly secured 79th place nationally. The chatbot was built to assist users by offering features like Fast-Track Court details, Case Status Tracking, and even live streaming
-                            of court cases. It also provided easy access to the National Judicial Data Grid (NJDC) for real-time updates on case pendency and kept users informed about judicial appointments and vacancies.</p>
+                        <div class="project-header">
+                            <h3>Vidhi Chatbot</h3>
+                            <span class="project-status status-completed">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            A comprehensive legal assistance chatbot developed for Smart India Hackathon 2023. Features include Fast-Track Court details, case status tracking, live court streaming, NJDC integration, and judicial appointment information.
+                        </p>
                         <div class="project-tech">
-                            <span>Python</span>
-                            <span>JavaScript</span>
-                            <span>HTML/CSS</span>
-                            <span>MySQL</span>
-                            <span>OpenCV</span>
-                            <span>Flask</span>
-                            <span>Google Generative AI</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">HTML/CSS</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">OpenCV</span>
+                            <span class="tech-badge">Flask</span>
+                            <span class="tech-badge">Google AI</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="talentsphere.png" alt="TalentSphere">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
-                                <a href="https://github.com/praveenlokku/TalentSphere.git" class="project-github"><i class="fab fa-github"></i></a>
-                                <a href="https://www.linkedin.com/posts/praveenlokku_talentsphere-edtech-reactjs-activity-7307091623669022721-t21J?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEXL4AQB_87WG4NVjFukgjLQOlRgpw4l408" class="project-Linkedin"><i class="fab fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>TalentSphere</h3>
-                        <p>A platform where students collaborate on real-world industry projects, build skills, and earn rewards.
-                            <br>As students, we often struggle to work on industrial projects before entering the professional world. Recognizing this challenge, our team "Sparq" has developed a website that connects industrial experts with students.
-                        </p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>JavaScript</span>
-                            <span>React Js</span>
-                            <span>Postgresql</span>
-                            <span>OpenCV</span>
-                            <span>Django</span>
-                            <span>Google Generative AI</span>
-                        </div>
-                    </div>
-                </div><a href="#projects" class="btn btn-secondary"> More Projects</a>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="projects-footer">
+                <button id="loadMoreBtn" class="btn btn-secondary">Load More Projects</button>
             </div>
         </div>
     </section>
@@ -424,6 +478,58 @@
         </div>
     </section>
 
+    <!-- Participations Section -->
+    <section id="participations" class="participations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Participations</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="participations-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Smart India Hackathon (SIH)</h3>
+                        <span class="timeline-date">2024</span>
+                        <p>Participated in Smart India Hackathon and secured 75th rank out of 400+ teams, showcasing innovation and technical excellence.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>IIT Delhi - Adobe Hackathon</h3>
+                        <span class="timeline-date">2025</span>
+                        <p>Participated in IIT Delhi - Adobe Hackathon, gaining valuable experience in competitive programming and collaborative development.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Children Who Code</h3>
+                        <span class="timeline-date">2024</span>
+                        <p>Worked as a PR representative for our ma'am's startup, contributing to community outreach and educational initiatives.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>DAA Hackathon Volunteer</h3>
+                        <span class="timeline-date">2025</span>
+                        <p>Volunteer in the upcoming DAA Hackathon conducted by Bennett University for academic purposes, supporting fellow students and fostering innovation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -439,7 +545,7 @@
                         </div>
                         <div class="contact-text">
                             <h3>Phone</h3>
-                            <p>+91 9063****32</p>
+                            <p>+91 9063598032</p>
                         </div>
                     </div>
                     <div class="contact-item">
