@@ -82,8 +82,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     //  Add animation class
                     card.style.animation = 'fadeInUp 0.5s ease forwards';
 
-                    // Hide projects beyond the first 3 unless they're already shown
-                    if (index >= 3 && !card.classList.contains('show')) {
+                    // Hide projects beyond the first 4 unless they're already shown
+                    if (index >= 4 && !card.classList.contains('show')) {
                         card.classList.remove('show');
                     }
                 } else {
@@ -105,9 +105,9 @@ document.addEventListener("DOMContentLoaded", function() {
             allProjectsBtn.classList.add('active');
         }
 
-        // Show only first 3 projects initially
+        // Show only first 4 projects initially
         projectCards.forEach((card, index) => {
-            if (index < 3) {
+            if (index < 4) {
                 card.style.display = 'block';
             } else {
                 card.style.display = 'none';
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (!loadMoreBtn) return;
 
         const hiddenProjects = Array.from(projectCards).filter((card, index) => {
-            return index >= 3 && card.style.display === 'none';
+            return index >= 4 && card.style.display === 'none';
         });
 
         // Show button if there are hidden projects

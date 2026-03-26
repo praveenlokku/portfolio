@@ -1018,8 +1018,8 @@ header.sticky .menu-toggle span {
     z-index: 1;
 }
 
-/* Hide projects beyond the first 3 initially */
-.project-card:nth-child(n+4) {
+/* Hide projects beyond the first 4 initially */
+.project-card:nth-child(n+5) {
     display: none;
 }
 
